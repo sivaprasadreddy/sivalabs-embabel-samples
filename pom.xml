@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sivalabs</groupId>
-    <artifactId>embabel-samples</artifactId>
+    <artifactId>sivalabs-embabel-samples</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -17,7 +17,7 @@
     </properties>
 
     <modules>
-
+        <module>spring-shell-demo</module>
     </modules>
 
 </project>
