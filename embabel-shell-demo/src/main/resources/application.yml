@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: embabel-shell-demo
+
+embabel:
+  models:
+    default-llm: qwen3:8b
+    llms:
+      better: gpt-5-mini
+      cheaper: gpt-oss:20b
+      faster: llama3.2:latest

@@ -1,0 +1,33 @@
+### Chat 1
+POST http://localhost:8080/api/chat-1
+Content-Type: application/json
+
+{
+  "request": "Give me the details of the movie Pulp Fiction"
+}
+
+### Chat 2
+POST http://localhost:8080/api/chat-2
+Content-Type: application/json
+
+{
+  "request": "Give me the details of the movie Kill Bill"
+}
+
+
+### Chat 3
+POST http://localhost:8080/api/chat-3
+Content-Type: application/json
+
+{
+  "request": "Give me the details of the movie Reservoir Dogs"
+}
+
+
+### Chat 4
+POST http://localhost:8080/api/chat-4
+Content-Type: application/json
+
+{
+  "request": "Give me the details of the movie Kill Bill"
+}
