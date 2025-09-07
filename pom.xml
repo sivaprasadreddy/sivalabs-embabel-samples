@@ -18,6 +18,7 @@
 
     <modules>
         <module>spring-shell-demo</module>
+        <module>embabel-shell-demo</module>
     </modules>
 
 </project>
