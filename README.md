@@ -13,6 +13,9 @@ $ curl -s "https://get.sdkman.io" | bash
 $ sdk env install
 ```
 
+## Embabel YouTube Tutorials
+* [Embabel Tutorial Playlist](https://www.youtube.com/watch?v=lqQ_NL4y5Qg&list=PLuNxlOYbv61hZlUxa2N9wJDt6LS8xF34K)
+
 ## References
 * [Embabel](https://github.com/embabel)
 * [Embabel Agent Framework](https://github.com/embabel/embabel-agent)
