@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: embabel-mcp-tools-shell-demo
+  ai:
+    mcp:
+      client:
+        enabled: true
+        name: embabel
+        version: 1.0.0
+        request-timeout: 30s
+        type: SYNC
+
+        stdio:
+          connections:
+            fetch-mcp:
+              command: docker
+              args:
+                - run
+                - -i
+                - --rm
+                - mcp/fetch
+            puppeteer-mcp:
+              command: docker
+              args:
+                - run
+                - -i
+                - --rm
+                - -e
+                - DOCKER_CONTAINER
+                - mcp/puppeteer
+              env:
+                DOCKER_CONTAINER: true
+            wikipedia-mcp:
+              command: docker
+              args:
+                - run
+                - -i
+                - --rm
+                - mcp/wikipedia-mcp
+            youtube-mcp:
+              command: npx
+              args:
+                - "-y"
+                - "git+https://github.com/acehoss/youtube-mcp-server"
+embabel:
+  models:
+    default-llm: gpt-oss:20b
+    llms:
+      better: gpt-5-mini
+      cheaper: qwen3:8b
+      faster: llama3.2:latest

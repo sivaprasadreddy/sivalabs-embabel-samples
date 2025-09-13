@@ -20,6 +20,7 @@
         <module>spring-shell-demo</module>
         <module>embabel-shell-demo</module>
         <module>embabel-webapp-demo</module>
+        <module>embabel-mcp-tools-shell-demo</module>
     </modules>
 
 </project>
