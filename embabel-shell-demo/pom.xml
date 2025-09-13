@@ -17,7 +17,7 @@
 
     <properties>
         <java.version>24</java.version>
-        <embabel-agent.version>0.1.2-SNAPSHOT</embabel-agent.version>
+        <embabel-agent.version>0.1.2</embabel-agent.version>
     </properties>
     
     <dependencies>
