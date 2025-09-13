@@ -13,41 +13,28 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConditionalOnProperty("OPENROUTER_API_KEY")
-public class OpenRouterLLMsConfig extends OpenAiCompatibleModelFactory {
-    private static final String PROVIDER = "DeepSeek";
-    private static final String QWEN3_CODER_MODEL = "qwen/qwen3-coder:free";
-    private static final String DEEPSEEK_V31_MODEL = "deepseek/deepseek-chat-v3.1:free";
+@ConditionalOnProperty("GEMINI_API_KEY")
+public class GeminiLLMsConfig extends OpenAiCompatibleModelFactory {
+    private static final String PROVIDER = "Gemini";
+    private static final String GEMINI_2_0_FLASH_MODEL = "gemini-2.0-flash";
 
-    public OpenRouterLLMsConfig(
-            @Value("${openrouter.base-url}")
+    public GeminiLLMsConfig(
+            @Value("${gemini.base-url}")
             String baseUrl,
-            @Value("${openrouter.api-key}")
+            @Value("${gemini.api-key}")
             String apiKey,
-            @Value("${openrouter.completions-path}")
+            @Value("${gemini.completions-path}")
             String completionsPath,
-            @Value("${openrouter.embeddings-path:''}")
+            @Value("${gemini.embeddings-path:''}")
             String embeddingsPath,
             @NotNull ObservationRegistry observationRegistry) {
         super(baseUrl, apiKey, completionsPath, embeddingsPath, observationRegistry);
     }
 
     @Bean
-    Llm qwen3Coder() {
+    Llm gemini20Flash() {
         return openAiCompatibleLlm(
-                QWEN3_CODER_MODEL,
-                perTokenPricingModel(),
-                PROVIDER,
-                null,
-                OpenAiChatOptionsConverter.INSTANCE,
-                RetryUtils.DEFAULT_RETRY_TEMPLATE
-        );
-    }
-
-    @Bean
-    Llm deepseekV31() {
-        return openAiCompatibleLlm(
-                DEEPSEEK_V31_MODEL,
+                GEMINI_2_0_FLASH_MODEL,
                 perTokenPricingModel(),
                 PROVIDER,
                 null,
