@@ -2,7 +2,7 @@
 Sample projects using the [Embabel](https://github.com/embabel) Agent Framework.
 
 ## Prerequisites
-* JDK 24
+* JDK 25
 * Docker and Docker Compose
 * Your favourite IDE (Recommended: [IntelliJ IDEA](https://www.jetbrains.com/idea/))
 
@@ -20,5 +20,5 @@ $ sdk env install
 * [Embabel](https://github.com/embabel)
 * [Embabel Agent Framework](https://github.com/embabel/embabel-agent)
 * [Official Embabel Agent Framework Samples](https://github.com/embabel/embabel-agent-examples)
-* [Embabel User Guide](https://docs.embabel.com/embabel-agent/guide/0.1.2-SNAPSHOT/)
+* [Embabel User Guide](https://docs.embabel.com/embabel-agent/guide/0.2.0/)
 * [Rod Johnson Medium Blog](https://medium.com/@springrod)

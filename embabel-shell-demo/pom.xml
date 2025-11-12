@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.5</version>
+        <version>3.5.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.sivalabs</groupId>
@@ -16,8 +16,8 @@
     <name>embabel-shell-demo</name>
 
     <properties>
-        <java.version>24</java.version>
-        <embabel-agent.version>0.1.2</embabel-agent.version>
+        <java.version>25</java.version>
+        <embabel-agent.version>0.2.0</embabel-agent.version>
     </properties>
     
     <dependencies>

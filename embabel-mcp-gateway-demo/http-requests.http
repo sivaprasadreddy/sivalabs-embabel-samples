@@ -1,0 +1,7 @@
+### Chat
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "query": "How many repositories are there in sivaprasadreddy GitHub account?"
+}

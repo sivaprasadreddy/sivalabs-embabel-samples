@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: embabel-mcp-gateway-demo
+  ai:
+    mcp:
+      client:
+        enabled: true
+        name: embabel
+        version: 1.0.0
+        request-timeout: 30s
+        type: SYNC
+
+        sse:
+          connections:
+            local:
+              # Allow the MCP_GATEWAY_URL environment variable to override the default URL
+              url: ${MCP_GATEWAY_URL:http://localhost:8811}
+embabel:
+  models:
+    default-llm: gpt-oss:20b
